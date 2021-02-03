@@ -1,11 +1,12 @@
 import './App.css';
 import React, {useState} from 'react';
 import Header from './components/Header';
-import Tasks from './components/Tasks';
+import Tasks, { TasksProps } from './components/Tasks';
 import { TaskProps } from './components/Task';
 
 const App = () => {
   const [tasks, setTasks] =  React.useState<TaskProps[]>(
+     
       [
           {
             id: 1,
@@ -25,7 +26,7 @@ const App = () => {
   return (
     <div className="container">
       <Header title={"Task App"}/>
-      <Tasks allTasks={tasks}/> 
+      <Tasks tasks={tasks}/> 
     </div>
   );
 }

@@ -1,9 +1,14 @@
 import Task, {TaskProps} from './Task';
 
-const Tasks = (allTasks: TaskProps[]) => {
+export type TasksProps = {
+    tasks: TaskProps[];
+}
+
+
+const Tasks = ({tasks}: TasksProps) => {
     return (
         <div>
-            {allTasks.map(task => (
+            {tasks.map(task => (
                 <Task id={task.id} text={task.text} day={task.day} reminder={task.reminder}/>
             ))}
         </div>
