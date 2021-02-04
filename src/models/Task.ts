@@ -1,13 +1,13 @@
 export class ITask {
     id: number;
     text: string;
-    day: string;
+    date: string;
     reminder: boolean;
 
     constructor() {
         this.id = 0;
         this.text = '';
-        this.day = '';
+        this.date = '';
         this.reminder = false;
     }
 }

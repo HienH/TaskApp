@@ -4,15 +4,16 @@ import { ITask } from '../models/Task';
 import Task from './Task';
 export type TasksProps = {
     tasks: ITask[];
-    onDelete: (id:number) => void;
+    onDelete: (id: number) => void;
+    onToggle: (id: number) => void;
 }
 
 
-const Tasks = ({tasks, onDelete}: TasksProps) => {
+const Tasks = ({tasks, onDelete, onToggle}: TasksProps) => {
     return (
         <div>
             {tasks.map(task => (
-                <Task key={task.id} onDelete={onDelete} task={task}/>
+                <Task key={task.id} onDelete={onDelete} task={task} onToggle={onToggle}/>
             ))}
         </div>
     )

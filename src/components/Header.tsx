@@ -1,15 +1,14 @@
 import Button from './Button';
-export interface Header {
+export interface HeaderProps {
     title: string;
+    onButtonClick: () => void;
+    showAdd: boolean;
 }
-const Header = ({title}: Header) => {
-    const onClick = () => {
-        console.log('clicked');
-    }
+const Header = ({title, onButtonClick, showAdd}: HeaderProps) => {
     return (
         <header className='header'>
             <h1> {title}</h1>
-            <Button buttonColour='green' buttonText='Add' buttonOnClick={onClick}/> 
+            <Button buttonColour={showAdd ? 'red' :'green'} buttonText={showAdd ? 'Close': 'Add'} buttonOnClick={onButtonClick}/> 
         </header>
       );
 }
