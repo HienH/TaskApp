@@ -1,4 +1,5 @@
 Task app created using React and json server
+Ability to add/delete task and set reminders
 
 - Run 'npm start'; it will concurrently start json server and client
 
