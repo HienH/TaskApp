@@ -3,6 +3,6 @@ Ability to add/delete task and set reminders
 
 - Run 'npm start'; it will concurrently start json server and client
 
-![Task-App](./assets/Task-App.PNG "Task-App")
+![Task-App](./assets/Task-app.PNG "Task-App")
 ![Adding-Task](./assets/Adding-Task.PNG "Adding-Task")
 ![Saved-Task](./assets/Saved-Task.PNG "Saved-Task")
